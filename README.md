@@ -2,24 +2,24 @@
 
 This is a simple library management system (for receptionist) to handle book rentals.
 
-###Below are the assumptions to create the REST service:
+### Below are the assumptions to create the REST service:
  - Receptionist (user) should be able to add new books
  - User should be able to search and find the books
  - User should be able to add Member to the library
  - User should be able to get member details (single or all)
  - User should be able to rent a book to a member
 
-###Design decisions
+### Design decisions
  - H2 database (in mem) for better support from Spring and reduce the dependency on external DB.
  - Model mapper - to convert DTO to entity
  - Lombok - to reduce the boiler plate code
 
-###Tech Stack:
+### Tech Stack:
  - Spring boot
  - Spring JPA
  - H2 Database (in mem)
 
-###Build tools:
+### Build tools:
  - Maven
  - JDK 11
  - Lombok
@@ -30,11 +30,11 @@ This is a simple library management system (for receptionist) to handle book ren
 mvn clean install && mvn spring-boot:run
 ```
 
-###Endpoints
+### Endpoints
 
 Below are the REST endpoints available to utilize the microservice functionality
 
-####Book Controller
+#### Book Controller
  - Add book
 ```
 POST http://localhost:8080/management/book
@@ -52,7 +52,7 @@ GET http://localhost:8080/management/books
 GET http://localhost:8080/management/book/{id}
 ```
 
-####Member Controller
+#### Member Controller
 - Add member
 ```
 POST http://localhost:8080/management/member
@@ -66,11 +66,11 @@ GET http://localhost:8080/management/member?name=<name>
 GET http://localhost:8080/management/members
 ```
 
-####Rental Controller
+#### Rental Controller
 - Add member
 ```
 POST http://localhost:8080/management/rent-book
 ```
 
-####Please note: 
+#### Please note: 
 Unit test coverage is not reached 80%. Some unit tests are created to for demo
