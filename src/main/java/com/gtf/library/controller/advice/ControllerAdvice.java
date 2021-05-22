@@ -1,4 +1,4 @@
-package com.gtf.library.controller;
+package com.gtf.library.controller.advice;
 
 import com.gtf.library.exceptions.BookNotAvailableException;
 import com.gtf.library.exceptions.NotFoundException;

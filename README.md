@@ -5,7 +5,7 @@ This is a simple library management system (for receptionist) to handle book ren
 ### Below are the assumptions to create the REST service:
  - Receptionist (user) should be able to add new books
  - User should be able to search and find the books
- - User should be able to add Member to the library
+ - User should be able to add member to the library
  - User should be able to get member details (single or all)
  - User should be able to rent a book to a member
 
@@ -30,7 +30,7 @@ This is a simple library management system (for receptionist) to handle book ren
 mvn clean install && mvn spring-boot:run
 ```
 
-### Endpoints
+## Endpoints
 
 Below are the REST endpoints available to utilize the microservice functionality
 
@@ -73,4 +73,4 @@ POST http://localhost:8080/management/rent-book
 ```
 
 #### Please note: 
-Unit test coverage is not reached 80%. Some unit tests are created to for demo
+Unit tests are created only at service and controller layer for demo.
